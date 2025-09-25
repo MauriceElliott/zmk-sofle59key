@@ -68,17 +68,17 @@
             display-name = "default";
 
             // ------------------------------------------------------------------------------------------------------------
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
-            // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   | BKSPC |
-            // |  TAB  |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
+            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   \   |
+            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+            // |LSHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | CTRL  |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | BKSPC |
+            //               | CMD | ALT  | SHIFT| LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                              &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB           &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&gresc            &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                              &kp N6     &kp N7     &kp N8     &kp N9    &kp N0    &kp PIPE
+&kp TAB           &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y      &kp U      &kp I      &kp O     &kp P     &kp MINUS
 &kp LEFT_SHIFT    &kp A   &kp S     &kp D     &kp F      &kp G                               &kp H      &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp EQUAL  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+&kp LEFT_CONTROL  &kp Z   &kp X     &kp C     &kp V      &kp B      &kp C_MUTE    &kp EQUAL  &kp N      &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp BSPC
                           &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp SPACE     &kp ENTER  &mo RAISE  &kp RCTRL  &kp LALT   &kp RGUI
             >;
 
@@ -90,18 +90,18 @@
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
-            // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
-            // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
-            // |       |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
-            // |       |  =  |  -  |  +   |  {   |  }   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
+            // |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |   F11 |  F12  |
+            // |   <>  |  -  |  [  |  ]   |  {   |  }   |                   |  6   |  7    |  8    |  9   |   0   |  F12  |
+            // |   <>  |  _  |  =  |  +   |  &   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |   |   |
+            // |   <>  |  `  |  <> |  <>  |  #   |  *   |        |  |       |  [   |  ]    |  ;    |  :   |   \   |       |
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp F1     &kp F2     &kp F3    &kp F4    &kp F5                       &kp F6          &kp F7         &kp F8          &kp F9                &kp F10                &kp F11
-&trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5                       &kp CARET       &kp AMPERSAND  &kp ASTRK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp F12
-&trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                    &kp MINUS       &kp EQUAL      &kp ASTRK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans  &kp EQUAL  &kp MINUS  &kp PLUS  &kp LBRC  &kp RBRC   &trans    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp PIPE               &trans
-                   &trans     &trans    &trans    &trans     &trans    &trans  &trans          &trans         &trans          &trans
+&F1     &kp F2     &kp F3     &kp F4    &kp F5    &kp F6                       &none  &none  &none  &none  &none &none
+&trans  &kp MINUS  &kp LBKT   &kp RBKT  &kp LBRC  &kp RBRC                     &none  &none  &none  &none  &none &none
+&trans  &kp UNDER  &kp EQUAL  &kp PLUS  &kp AMPS  &kp PRCNT                    &none  &none  &none  &none  &none &none
+&trans  &kp GRAVE  &trans     &trans    &kp HASH  &kp STAR   &trans    &trans  &none  &none  &none  &none  &none &none
+                   &trans     &trans    &trans    &trans     &trans    &trans  &trans &trans &trans &trans
             >;
 
             sensor-bindings =
@@ -118,6 +118,18 @@
             // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
             // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
             //                |      |       |       |      |      |  |      |      |      |       |      |
+Main layer
+ESC    1 2 3 4 5                  6 7 8 9 0 \
+TAB    q w e r t                  y u i o p -
+LSHIFT a s d f g                  h j k l ; '
+LCTRL  z x c v b                  n m , . / BKSPC
+CMD ALT SHIFT RAISE ENTER         SPACE LOWER ESC NA ENTER //Thumb Clusters are the same on all layers, so are outer edges
+
+Left hand                         Right hand
+F1 F2 F3 F4 F5 F6                 F7   F8     F9      F10    F11  F12
+NA -  {  }  (  )                  Home End    UpArrow PgUp   PgDn NA
+NA _  =  +  [  ]                  Del  LArrow DArrow  RArrow NA   NA 
+NA `  %  #  &  *                  CAPS NA     NA      NA     NA   NA
 
             bindings = <
 &trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans    &trans    &trans     &trans   &trans
@@ -170,3 +182,4 @@
         };
     };
 };
+
