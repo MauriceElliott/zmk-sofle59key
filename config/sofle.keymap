@@ -118,24 +118,11 @@
             // |       | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
             // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
             //                |      |       |       |      |      |  |      |      |      |       |      |
-Main layer
-ESC    1 2 3 4 5                  6 7 8 9 0 \
-TAB    q w e r t                  y u i o p -
-LSHIFT a s d f g                  h j k l ; '
-LCTRL  z x c v b                  n m , . / BKSPC
-CMD ALT SHIFT RAISE ENTER         SPACE LOWER ESC NA ENTER //Thumb Clusters are the same on all layers, so are outer edges
-
-Left hand                         Right hand
-F1 F2 F3 F4 F5 F6                 F7   F8     F9      F10    F11  F12
-NA -  {  }  (  )                  Home End    UpArrow PgUp   PgDn NA
-NA _  =  +  [  ]                  Del  LArrow DArrow  RArrow NA   NA 
-NA `  %  #  &  *                  CAPS NA     NA      NA     NA   NA
-
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                      &trans     &trans    &trans    &trans     &trans   &trans
-&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp PG_UP  &trans    &kp UP    &trans     &kp N0   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &trans     &trans    &trans    &trans     &trans   &trans
+&trans  &trans      &trans     &trans       &trans       &trans                      &kp F7     &kp F8    &kb F9    &kp F10     &kp F11   &kp F12
+&trans  &kp INS     &kp PSCRN  &kp K_CMENU  &trans       &trans                      &kp HOME    &kp END    &kp UP    &PG_UP     &kp PG_DN   &trans
+&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &kp CAPS     &trans    &trans    &trans     &trans   &trans
                     &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans    &trans    &trans
             >;
 
@@ -183,3 +170,15 @@ NA `  %  #  &  *                  CAPS NA     NA      NA     NA   NA
     };
 };
 
+// Main layer
+// ESC    1 2 3 4 5                  6 7 8 9 0 \
+// TAB    q w e r t                  y u i o p -
+// LSHIFT a s d f g                  h j k l ; '
+// LCTRL  z x c v b                  n m , . / BKSPC
+// CMD ALT SHIFT RAISE ENTER         SPACE LOWER ESC NA ENTER //Thumb Clusters are the same on all layers, so are outer edges
+
+// Left hand                         Right hand
+// F1 F2 F3 F4 F5 F6                 F7   F8     F9      F10    F11  F12
+// NA -  {  }  (  )                  Home End    UpArrow PgUp   PgDn NA
+// NA _  =  +  [  ]                  Del  LArrow DArrow  RArrow NA   NA 
+// NA `  %  #  &  *                  CAPS NA     NA      NA     NA   NA
