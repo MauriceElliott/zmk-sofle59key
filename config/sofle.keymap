@@ -119,9 +119,9 @@
             // |       | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
             //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&trans  &trans      &trans     &trans       &trans       &trans                      &kp F7     &kp F8    &kb F9    &kp F10     &kp F11   &kp F12
+&trans  &trans      &trans     &trans       &trans       &trans                      &kp F7     &kp F8    &kp F9    &kp F10     &kp F11   &kp F12
 &trans  &kp INS     &kp PSCR  &kp MENU  &trans       &trans                      &kp HOME    &kp END    &kp UP    &kp PG_UP     &kp PG_DN   &trans
-&trans  &kp LALT    &kp LCTRL  &kp LSHFT    &trans       &kp CLCK                    &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &kp LALT    &kp LCTRL  &kp LEFT_SHIFT    &trans       &kp CLCK                    &kp DEL  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
 &trans  &kp K_UNDO  &kp K_CUT  &kp K_COPY   &kp K_PASTE  &trans    &trans    &trans  &kp CAPS     &trans    &trans    &trans     &trans   &trans
                     &trans     &trans       &trans       &trans    &trans    &trans  &trans     &trans    &trans    &trans
             >;
